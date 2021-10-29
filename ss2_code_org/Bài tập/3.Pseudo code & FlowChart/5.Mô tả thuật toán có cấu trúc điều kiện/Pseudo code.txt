@@ -1,0 +1,13 @@
+BEGIN
+ Input Mark
+ if(Mark >= 75)
+    Output "Loại A"
+ Else if(Mark Mark >= 60)
+    Output "Loại B"
+ Else if(Mark >= 45)
+    Output "Loại C"
+ Else if(Mark >=35)
+    Output "Loại D"
+ Else
+    Output "Loại F"
+END

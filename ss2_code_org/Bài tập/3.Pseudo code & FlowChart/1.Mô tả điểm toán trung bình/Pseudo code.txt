@@ -1,0 +1,7 @@
+BEGIN
+   Input MathMark
+   Input PhysicsMark
+   Input ChemistryMark
+    Average = (MathMark + PhysicsMark + ChemistryMark) / 3
+   Output Average
+END

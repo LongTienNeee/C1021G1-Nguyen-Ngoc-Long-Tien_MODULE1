@@ -1,0 +1,8 @@
+begin
+ N là số ngẫu nhiên từ 0-9
+ input M
+ if(N == M)
+   display "Dự đoán đúng"
+ else
+   display "Dự đoán sai"
+end

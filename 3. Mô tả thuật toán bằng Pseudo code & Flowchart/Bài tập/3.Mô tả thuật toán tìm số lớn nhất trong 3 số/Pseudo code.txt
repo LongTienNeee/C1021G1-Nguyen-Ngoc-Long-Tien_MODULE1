@@ -1,0 +1,10 @@
+BEGIN
+  Input a,b,c
+  if (a>b && a>c)
+    Output "a là số lớn nhất"
+  else if (b>c)
+    Output "b là số lớn nhất"
+  else 
+     Output "c là số lớn nhất"
+END  
+ 

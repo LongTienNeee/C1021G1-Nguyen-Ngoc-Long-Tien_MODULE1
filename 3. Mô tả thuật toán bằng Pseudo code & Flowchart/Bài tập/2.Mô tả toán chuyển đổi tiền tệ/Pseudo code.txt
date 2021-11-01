@@ -1,0 +1,5 @@
+BEGIN
+  Input USD
+  VND = USD*23000
+  Output VND
+END

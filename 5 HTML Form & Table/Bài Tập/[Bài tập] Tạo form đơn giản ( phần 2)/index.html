@@ -3,19 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>Đăng kí học viên</title>
+    <style>
+        th {
+            background-color: pink;
+            color: blue;
+        }
+    </style>
 </head>
 <form action="">
-<h2>ĐĂNG KÝ HỌC VIÊN</h2>
     <table>
         <tr>
-           <th>Họ và tên</th>
-            <th><input type="text" name="fullname" size="20"</th>
+            <th style="text-align: center" colspan="3"><h2>ĐĂNG KÝ HỌC VIÊN</h2></th>
         </tr>
-    Ngày sinh <input type="text" name="Dob" size="20"><br><br>
-    Giới tính <input type="radio" name="Sex"> Nam
-              <input type="radio" name="Sex"> Nữ <br><br>
-    Địa chỉ <input type="text" name="Address" size="30"><br><br>
-    Lớp <select name="Lớp" id="">
+
+        <tr>
+           <td>Họ và tên</td>
+            <td colspan="2"><input type="text" name="fullname" size="20"</td>
+        </tr>
+
+        <tr>
+            <td> Ngày sinh </td>
+            <td colspan="2"><input type="text" name="Dob" size="20"></td>
+        </tr>
+
+        <tr>
+            <td> Giới tính </td>
+            <td><input type="radio" name="Sex"> Nam</td>
+            <td><input type="radio" name="Sex"> Nữ</td>
+        </tr>
+
+        <tr>
+            <td>Địa chỉ </td>
+            <td colspan="2"><input type="text" name="Address" size="20"></td>
+        </tr>
+
+        <tr>
+            <td>Lớp</td>
+             <td colspan="2"><select name="Lớp" id="">
     <option value="">1</option>
     <option value="">2</option>
     <option value="">3</option>
@@ -29,11 +53,24 @@
     <option value="">11</option>
     <option value="">12</option>
     <option value="">Khác</option>
-        </select><br><br>
-    Email <input type="text" name="Email" size="20"><br><br>
-    Số điện thoại <input type="text" name="PhoneNumber" size="20"><br><br>
-    <input type="submit" value="Đăng Ký">
-    <input type="reset" value="Nhập lại">
+        </select>
+             </td>
+        </tr>
+
+   <tr>
+       <td>Email</td>
+       <td colspan="2" ><input type="text" name="Email" size="20"></td>
+   </tr>
+
+    <tr>
+        <td>Số điện thoại</td>
+        <td colspan="2"><input type="text" name="PhoneNumber" size="20"></td>
+    </tr>
+
+     <tr>
+         <td><input type="submit" value="Đăng Ký"></td>
+         <td><input type="reset" value="Nhập lại"></td>
+     </tr>
     </table>
 
 

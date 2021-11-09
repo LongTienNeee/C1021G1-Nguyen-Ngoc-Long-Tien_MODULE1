@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    confirm("Tính lãi suất hàng tháng")
+    let vonhientai = Number(prompt("Nhập vốn hiện tại"))
+    let t = Number(prompt("Nhập số tháng bạn muốn ủ lãi"))
+    // let i = Number(prompt("Nhập % lãi suất / năm"))
+    // let tienlai = (vonhientai*(i/12)*t)
+    if(t>=1 && t <=6){
+            alert("Lãi suất theo tháng 1 - 6 của bạn là 0.1 %. Tiền lãi của bạn là " + vonhientai*(0.1/12)*t + " VND")
+        } else if(t <= 12) {
+            alert("Lãi suất theo tháng 7 - 12 của bạn là 0.2. Tiền lãi của bạn là %" + vonhientai*(0.2/12)*t + " VND")
+    }
+
+</script>
+
+</body>
+</html>

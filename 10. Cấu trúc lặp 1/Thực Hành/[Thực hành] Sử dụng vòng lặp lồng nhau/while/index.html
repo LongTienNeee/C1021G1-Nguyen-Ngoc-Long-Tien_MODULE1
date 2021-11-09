@@ -2,9 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let box
+    let i = j = 1
+    box = "<table border='1' width='300' cellspacing='0' cellpadding='3'>"
+       while(i <= 10){
+           box = box + "<tr>"
+             while(j <= 10){
+                box = box + "<td>" + i*j + "</td>"
+                 j++
+             }
+           box = box + "</tr>"
+           j = 1
+           i++
+    }
+    box = box + "</table>"
+    document.write(box)
+</script>
+
 </body>
 </html>

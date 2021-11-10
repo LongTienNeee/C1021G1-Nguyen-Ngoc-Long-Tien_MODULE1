@@ -6,15 +6,26 @@
 </head>
 <body>
 <script>
-    let numBer = parseInt(prompt("Nhập số lượng số nguyên tố cần in"))
-    let count = 0
-    let N = 2
-    while(count < numBer){
-        if(){
-            document.write(N)
+    let count = 0;
+    let n = 2;
+    let check;
+    let result = "";
+    while (count <= 20) {
+        check = true;
+        for (let i = 2; i <= Math.sqrt(n); i++) {
+            if (n % i === 0) {
+                check = false;
+                break;
+            }
         }
+        if (check) {
+            result += n + " ,"
+            count++;
+        }
+        n++;
     }
-    N++
+    document.write(result);
+    document.write("</br>");
 
 </script>
 </body>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let array = [5,4,11,88,12,77,99,3,2]
+  let max
+      max = array[0]
+  let viTri
+      viTri = 0
+  for(let i = 1;i<array.length;i++){
+         if(array[i] > max ){
+             max = array[i]
+             viTri = i
+         }
+  }
+  console.log("The best number is :" + max)
+   alert("The best number is :" + max + " at position " + viTri)
+ </script>
+</body>
+</html>

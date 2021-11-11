@@ -7,17 +7,16 @@
 <body>
 <h1>Bảng cửa chương</h1>
 <script>
-    let box
-    box = "<table border='1' width = '600'>"
+ let i, j
+    document.write("<table border='1' width = '600'>")
     for(i = 1 ; i <= 9; i++){
-        box = box  + "<tr>"
+        document.write("<tr>")
         for(j= 2 ; j<=9; j++){
-            box = box  +  "<td>" + i + " x " + j + ' = ' + i*j + "</td>"
+            document.write("<td>" + i + " x " + j + ' = ' + i*j + "</td>")
         }
-        box = box + "</tr>"
+        document.write("</tr>")
     }
-    box = box + "</table>"
-    document.write(box)
+    document.write("</table>")
 </script>
 </body>
 </html>

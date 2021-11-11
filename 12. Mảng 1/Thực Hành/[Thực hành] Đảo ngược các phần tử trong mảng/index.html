@@ -2,9 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let x = [-3,5,1,3,2,10]
+    let firstArray = 0
+    let lastArray = x.length - 1
+    for(firstArray; firstArray<lastArray; firstArray++){
+        let a = x[firstArray]
+        x[firstArray] = x[lastArray]
+        x[lastArray] = a
+        firstArray++
+        lastArray--
+    }
+    alert("Mảng đã bị đảo ngược lại: " + x)
+
+
+</script>
+
 </body>
 </html>

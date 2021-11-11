@@ -2,9 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+   let doan = Number(prompt("Nhập số bạn muốn xem có nằm trong chuổi hay không"))
+    let x = [1,5,7,3,8,-2,-3]
+    let first = 0
+    let last = x.length-1
+    for(first;first<last;first++){
+        if(doan == x[first]){
+            alert("Value: " + doan + " is in array")
+        } else {
+                alert("Value: " + doan + " is NOT in array")
+                break;
+        }
+    }
+
+
+</script>
+
 </body>
 </html>

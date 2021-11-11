@@ -2,9 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<img src="" id="img1" width="250" height="600" onclick="changeImg1()" alt="">
+<img src="" id="img2" width="250" height="600" onclick="changeImg2()" alt="">
+<img src="" id="img3" width="250" height="600" onclick="changeImg3()" alt="">
+
+<script>
+    function changeImg1() {
+        let img1 = document.getElementById("img1")
+        if(img1.getAttribute("src") === ""){
+            img1.src = ""
+        } else if(img1.getAttribute("src") === "") {
+            img1.src = ""
+        } else {
+            img1.src = ""
+        }
+        check()
+    }
+
+    function changeImg2() {
+        let img2 = document.getElementById("img2")
+        if (img2.getAttribute("src") === "") {
+            img2.src = ""
+        } else if (img1.getAttribute("src") === "") {
+            img2.src = ""
+        } else {
+            img2.src = "img3a"
+        }
+        check()
+    }
+
+        function changeImg3() {
+            let img3 = document.getElementById("img3")
+            if (img3.getAttribute("src") === "") {
+                img1.src = ""
+            } else if (img1.getAttribute("src") === "") {
+                img3.src = ""
+            } else {
+                img3.src = ""
+            }
+            check()
+        }
+
+        function check() {
+           if()
+
+        }
+</script>
 </body>
 </html>

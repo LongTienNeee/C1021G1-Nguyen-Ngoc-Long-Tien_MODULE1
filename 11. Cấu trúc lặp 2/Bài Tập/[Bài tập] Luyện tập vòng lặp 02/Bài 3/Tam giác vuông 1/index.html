@@ -6,17 +6,13 @@
 </head>
 <body>
 <script>
-    let i=0
-    let j=5
-    let dausao = "     *"
-    let dausao1= "*"
-    while (i<5) {
-        for (j; j >0; j--) {
-            dausao += dausao1
-            document.write(dausao + "<br>")
+   let i ,j
+   let sao = "*"
+    for(let i = 1;i <= 5; i++){
+        for(let j=1; j<=i; j++){
+            document.write(sao)
         }
         document.write("<br>")
-        i++
     }
 </script>
 

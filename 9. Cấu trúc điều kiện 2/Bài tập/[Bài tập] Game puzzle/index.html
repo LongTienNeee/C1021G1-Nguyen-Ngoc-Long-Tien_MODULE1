@@ -5,49 +5,65 @@
     <title>Title</title>
 </head>
 <body>
-<img src="" id="img1" width="250" height="600" onclick="changeImg1()" alt="">
-<img src="" id="img2" width="250" height="600" onclick="changeImg2()" alt="">
-<img src="" id="img3" width="250" height="600" onclick="changeImg3()" alt="">
+<img src="imgBlue.png" id="img1" width="250" height="600" onclick="changeImg1()" alt="">
+<img src="imgRed.png" id="img2" width="250" height="600" onclick="changeImg2()" alt="">
+<img src="imgPink.png" id="img3" width="250" height="600" onclick="changeImg3()" alt="">
 
 <script>
     function changeImg1() {
         let img1 = document.getElementById("img1")
-        if(img1.getAttribute("src") === ""){
-            img1.src = ""
-        } else if(img1.getAttribute("src") === "") {
-            img1.src = ""
+        if (img1.getAttribute("src") === "imgBlue.png") {
+            img1.src = "imgRed.png"
+        } else if (img1.getAttribute("src") === "imgRed.png") {
+            img1.src = "imgPink.png"
         } else {
-            img1.src = ""
+            img1.src = "imgBlue.png"
         }
         check()
     }
 
     function changeImg2() {
         let img2 = document.getElementById("img2")
-        if (img2.getAttribute("src") === "") {
-            img2.src = ""
-        } else if (img1.getAttribute("src") === "") {
-            img2.src = ""
+        if (img2.getAttribute("src") === "imgRed.png") {
+            img2.src = "imgBlue.png"
+        } else if (img2.getAttribute("src") === "imgBlue.png") {
+            img2.src = "imgPink.png"
         } else {
-            img2.src = "img3a"
+            img2.src = "imgRed.png"
         }
         check()
     }
 
         function changeImg3() {
             let img3 = document.getElementById("img3")
-            if (img3.getAttribute("src") === "") {
-                img1.src = ""
-            } else if (img1.getAttribute("src") === "") {
-                img3.src = ""
+            if (img3.getAttribute("src") === "imgPink.png") {
+                img3.src = "imgRed.png"
+            } else if (img3.getAttribute("src") === "imgRed.png") {
+                img3.src = "imgBlue.png"
             } else {
-                img3.src = ""
+                img3.src = "imgPink.png"
             }
             check()
         }
 
         function check() {
-           if()
+           if(img1.src === "imgBlue.png"
+             && img2.src === "imgBlue.png"
+               && img3.src === "imgBlue.png"){
+              alert("Bạn đã hoàn thành hình màu xanh")
+           }
+
+            if(img1.src === "imgRed.png"
+                && img2.src === "imgRed.png"
+                && img3.src === "imgRed.png"){
+                alert("Bạn đã hoàn thành hình màu đỏ")
+            }
+
+            if(img1.src === "imgPink.png"
+                && img2.src === "imgPink.png"
+                && img3.src === "imgPink.png"){
+                alert("Bạn đã hoàn thành hình hồng xanh")
+            }
 
         }
 </script>

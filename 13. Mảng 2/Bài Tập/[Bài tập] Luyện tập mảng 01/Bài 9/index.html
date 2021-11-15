@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body lang="en">
+<title></title>
+<meta charset="UTF-8" />
+</body>
+<body>
+<script>
+    let i,j
+    let arrayA = new Array(10);
+    for(i=0;i<arrayA.length;i++){
+        arrayA[i] = prompt("Nhập phần tử " + i + " của mảng A")
+    }
+
+    let arrayB = new Array(10);
+    for(j=0;j<arrayB.length;j++){
+        arrayB[j] = prompt("Nhập phần tử " + j + " của mảng B")
+    }
+
+    let arrayC = [arrayA.concat(arrayB)]
+
+    console.log(arrayC)
+</script>
+</body>
+</html>

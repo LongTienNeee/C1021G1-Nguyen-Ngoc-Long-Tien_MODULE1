@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+<script>
+    let i
+    let a = parseInt(prompt("Nhập độ dài mảng"))
+    let array = new Array(a);
+    for(i=0;i<array.length;i++){
+        array[i] = prompt("Nhập phần tử " + i)
+    }
+
+    let begin = 0
+    let last = array.length-1
+    while(begin <= last){
+        let b = array[begin]
+        array[begin] = array[last]
+        array[last] = b
+        begin ++
+        last --
+    }
+
+    alert(array.join(""))
+
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let i,j
+    let n = parseInt(prompt("Nhập độ dài của mảng"))
+    let array = new Array(n);
+    for(i=0;i<array.length;i++){
+        array[i] = parseInt(prompt("Nhập phần tử " + i + " của mảng"))
+    }
+
+    let max = array[0]
+    let total = array[0]
+    for(j=1;j<array.length;j++){
+        if(array[j] > max){
+            max = array[j]
+        }
+        total += array[j]
+    }
+
+    let average = total/(array.length)
+
+    alert("Giá trị lớn nhất trong mảng là : " + i)
+    alert("Giá trị trung bình của mảng này là :" + average)
+</script>
+
+</body>
+</html>

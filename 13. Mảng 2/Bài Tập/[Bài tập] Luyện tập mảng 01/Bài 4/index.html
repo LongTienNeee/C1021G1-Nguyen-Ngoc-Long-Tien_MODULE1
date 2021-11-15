@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+<script>
+    let n = parseInt(prompt('Nhâp độ dài mảng'))
+    let array = new Array(n);
+    let i
+    for(i=0;i<array.length;i++){
+        array[i] = parseInt(prompt('Nhập phàn tử ' + i))
+    }
+
+    let begin = 0
+    let last = array.length - 1
+    while (begin <= last){
+        let a = array[begin];
+        array[begin] = array[last]
+        array[last] = a
+        begin++
+        last--
+    }
+
+    alert(array)
+    console.log(array)
+</script>
+</body>
+</html>

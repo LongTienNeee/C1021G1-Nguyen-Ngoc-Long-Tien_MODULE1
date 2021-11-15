@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let i ,j
+    let a = parseInt(prompt("Nhập độ dài mảng"))
+    let array = new Array(a)
+    for(i=0;i<array.length;i++){
+        array[i] = parseInt(prompt("Nhập phần tử " + i))
+    }
+
+
+    let max = array[0]
+    let index = 0
+    for(j=1;j<array.length;j++){
+        if(array[j] > max){
+            max = array[j]
+            index = j
+        }
+    }
+    alert("Giá trị lớn nhất trong mảng là " + max + " nằm tại vị trí " + index)
+    console.log()
+</script>
+
+</body>
+</html>

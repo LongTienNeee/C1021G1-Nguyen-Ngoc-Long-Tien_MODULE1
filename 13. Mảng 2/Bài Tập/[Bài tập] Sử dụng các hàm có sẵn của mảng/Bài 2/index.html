@@ -2,9 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let num = 25647782;
+    let numtostring = num.toString();
+    let result
+        result = [numtostring[0]]
+    for(let i=0;i<numtostring.length;i++){
+        if(numtostring[i] % 2 === 0 && numtostring[i+1] % 2 === 0){
+            result.push(numtostring[i] , "-")
+        } else {
+            result.push(numtostring[i])
+        }
+    }
+    alert(result.join(" "))
+
+</script>
+
 </body>
 </html>

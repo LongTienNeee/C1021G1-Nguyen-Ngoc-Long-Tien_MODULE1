@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = new Array(10)
+    for(let j=0;j<array.length;j++){
+        array[j] = parseInt(prompt("Nhập phần tử " + j))
+    }
+
+    let n
+        n   = []
+    for(let i=0;i<array.length;i++){
+        if(array[i] >= 10){
+            n.push(array[i])
+        }
+    }
+    console.log(n)
+    alert("Số nguyên lớn hơn hoặc bằng 10 là : " + n.join(", "))
+
+</script>
+</body>
+</html>

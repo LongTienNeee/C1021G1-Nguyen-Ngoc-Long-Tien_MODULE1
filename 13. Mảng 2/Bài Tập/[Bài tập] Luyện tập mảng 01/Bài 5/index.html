@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+<script>
+    let n =  parseInt(prompt("Nhập độ dài của mảng"))
+    let array = new Array(n)
+    for(let i=0;i<array.length;i++){
+        array[i] = parseInt(prompt("Nhập phần tử " +i))
+    }
+
+    let count = 0
+    let x = []
+    for(let j=0;j<array.length;j++){
+        if(array[j] < 0){
+            x.push(array[j])
+            count += 1
+        }
+    }
+    alert("Số nguyên âm có trong mảng là :" + count)
+    console.log(x)
+
+</script>
+</body>
+</html>

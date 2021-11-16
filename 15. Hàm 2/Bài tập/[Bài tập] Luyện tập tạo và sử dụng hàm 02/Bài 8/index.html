@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function changeLocation(array) {
+        let begin = 0
+        let last = array.length -1
+        while(begin < last) {
+            let b = array[begin]
+            array[begin] = array[last]
+            array[last] = b
+            begin++
+            last--
+        }
+        return array
+    }
+
+    let sizeArray = parseInt(prompt("Nhập vào độ dài của mảng"))
+    let a = new Array(sizeArray)
+    for(let i=0;i<a.length;i++) {
+        a[i] = parseInt(prompt("Nhập số nguyên vào phần tử " + i))
+    }
+    console.log(a)
+
+    let result
+        result = changeLocation(a)
+    console.log(result)
+</script>
+
+</body>
+</html>

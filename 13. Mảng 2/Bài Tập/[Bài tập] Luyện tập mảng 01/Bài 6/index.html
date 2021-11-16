@@ -12,14 +12,18 @@
         array[i] = parseInt(prompt("Nhập vào phần tử " + i + " của mảng"))
     }
     let V
-        V = prompt("Nhập vào phần tử V")
+        V = parseInt(prompt("Nhập vào số nguyên V"))
 
+    let count = 0
     for(j=0;j<array.length;j++){
         if(V === array[j]){
-            alert("V is in array")
-        } else {
-           continue
+            count++
         }
+    }
+    if(count > 0){
+        alert("V thuộc mảng")
+    } else {
+        alert("V không thuộc mảng")
     }
 
 

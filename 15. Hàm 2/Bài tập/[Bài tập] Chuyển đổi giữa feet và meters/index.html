@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Chuyển đổi feet và meters</h2>
+<table>
+<tr>
+    <td>Meters</td>
+    <td><input id="toMeters" type="text"
+               onchange="toFeet(this.value)"
+               oninput="toFeet(this.value)">
+    </td>
+    <td>==> Feet : <span id="outFeet"></span></td>
+</tr>
+<tr>
+    <td>Feet</td>
+    <td><input id="toFeet" type="text"
+               onchange="toMeters(this.value)"
+               oninput="toMeters(this.value)">
+    </td>
+    <td>==> Meters : <span id="outMeters"></span></td>
+</tr>
+</table>
+
+
+<script>
+    let m = document.getElementById("toMeters")
+function toFeet(m) {
+    var feet
+        feet = 3.279 * m
+    document.getElementById("outFeet").innerHTML = feet
+
+}
+   let f = document.getElementById("toFeet")
+function toMeters(f) {
+     var meters
+         meters = 0.305 * f
+    document.getElementById("outMeters").innerHTML = meters
+}
+</script>
+
+</body>
+</html>

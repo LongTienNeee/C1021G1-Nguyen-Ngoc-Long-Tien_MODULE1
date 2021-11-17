@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = new Array(10)
+    for(let i=0;i<arr.length;i++){
+        arr[i] = parseInt(prompt("Nhập phần tử thứ " + i))
+    }
+
+    let result = arr.sort(function (a,b) {
+           return a - b
+    })
+
+    alert(result)
+</script>
+
+</body>
+</html>

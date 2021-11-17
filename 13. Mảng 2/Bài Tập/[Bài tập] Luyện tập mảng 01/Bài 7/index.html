@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+   let array = new Array(10)
+    for(let i=0;i<array.length;i++){
+        array[i] = prompt("Nhập vào phần tử thứ " + i)
+    }
+    let V = prompt("Nhập phần tử V")
+
+    let count = 0
+    let index
+    for(let j=0;j<array.length;j++){
+        if(array[j] === V){
+            count++
+            index = j
+        }
+    }
+    if(count > 0){
+        array.splice(index,1)
+        console.log(array)
+    } else {
+        alert("Không tìm thấy V trong mảng này")
+    }
+
+</script>
+
+</body>
+</html>

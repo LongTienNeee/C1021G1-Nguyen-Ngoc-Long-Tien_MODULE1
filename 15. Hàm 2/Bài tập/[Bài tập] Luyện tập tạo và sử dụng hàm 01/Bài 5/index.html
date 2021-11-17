@@ -9,9 +9,25 @@
     let  star1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus']
     let  star2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo']
     function nameOfStars(name) {
-        for(let i=0; i<star1.length; i++) {
+        let count = 0
+        let index
+        for (let i = 0; i < star1.length; i++) {
+             if(name === star1[i]){
+                 count++
+                 index = i
+                 break
+             }
+        }
+        for(let j=0;j<star2.length;j++){
+            if(count > 1){
+                return star2[index]
+            } else {
+                return "Không tìm thấy ngôi sao này"
+            }
 
         }
+
+    }
 </script>
 
 </body>

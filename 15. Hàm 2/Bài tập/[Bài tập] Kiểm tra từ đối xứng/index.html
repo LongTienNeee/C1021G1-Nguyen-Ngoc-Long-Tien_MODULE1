@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkSym(string) {
+        let a = string.split('')
+        let b = a.reverse()
+        let c = b.join('')
+            if (string === c) {
+                return "Chuỗi này đối xứng";
+            } else {
+                return "Chuỗi này không đối xứng";
+            }
+    }
+
+    let word = prompt("Nhập chuỗi bạn muốn kiểm tra đối xứng")
+    let result = checkSym(word)
+    alert(result)
+</script>
+
+</body>
+</html>

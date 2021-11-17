@@ -5,7 +5,26 @@
     <title>Title</title>
 </head>
 <body>
-<input type=""  >
+<h2>Add New product</h2>
+<input type="text" id="newProduct" placeholder="New Product">
+<button type="button" onclick="clickToAdd()">Add</button>
+<div id="result" ></div>
+<script>
+    let x = 0
+    let array = Array()
+    function clickToAdd() {
+        document.getElementById("result").innerHTML = "Display All Product"
+        document.getElementById("result").innerHTML = "Product Name"
+        array[x] = document.getElementById("newProduct").value
+        x++
+        document.getElementById("newProduct").value = " "
 
+        let e = "<hr/>"
+        for(let i =0;i<array.length;i++){
+           e += array[i] + "    " + "<button>edit</button>" + "<button >delete</button>" + "</br>"
+        }
+        document.getElementById("result").innerHTML = e
+        }
+</script>
 </body>
 </html>

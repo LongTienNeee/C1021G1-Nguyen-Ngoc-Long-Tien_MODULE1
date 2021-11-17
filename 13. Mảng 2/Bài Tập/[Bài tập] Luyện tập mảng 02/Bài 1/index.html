@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let row = parseInt(prompt("Nhập số dòng"))
+let a = new Array(row)
+let col = 0
+for (let i=0;i<a.length;i++){
+    col = parseInt(prompt("Nhập số cột tại dòng " + (i+1) ))
+    a[i] = new Array(col)
+
+    for(let j=0;j<a[i].length;j++){
+        a[i][j] = prompt("Nhập phần tử tại vị trí [" + i + "]" + "[" + j + "]")
+    }
+}
+console.log(a)
+</script>
+
+</body>
+</html>

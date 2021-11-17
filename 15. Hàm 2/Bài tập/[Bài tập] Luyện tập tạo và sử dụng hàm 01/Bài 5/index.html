@@ -2,32 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Chưa xong</title>
+    <title></title>
 </head>
 <body>
 <script>
-    let  star1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus']
-    let  star2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo']
+    let  star = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus']
+    let  constellation = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo']
     function nameOfStars(name) {
-        let count = 0
+        let count
+            count = 0
         let index
-        for (let i = 0; i < star1.length; i++) {
-             if(name === star1[i]){
+        for (let i = 0; i < star.length; i++) {
+             if(name === star[i]){
                  count++
                  index = i
                  break
              }
         }
-        for(let j=0;j<star2.length;j++){
-            if(count > 1){
-                return star2[index]
+            if(count === 1){
+                alert(constellation[index])
             } else {
-                return "Không tìm thấy ngôi sao này"
+                alert("Không tìm thấy ngôi sao này")
             }
-
-        }
-
     }
+
+    let name = prompt("Nhập vào tên ngôi sao để tìm chòm sao")
+    nameOfStars(name)
 </script>
 
 </body>

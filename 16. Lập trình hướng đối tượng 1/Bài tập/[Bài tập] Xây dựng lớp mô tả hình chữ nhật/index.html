@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas height="200" width="600" style="border: 1px solid"></canvas>
+<script>
+    class Rectangle {
+         constructor (Height, Width) {
+            this.Height = Height;
+            this.Width = Width;
+        };
+            getArea(){
+                return "Area = " + this.Height * this.Width
+            };
+            getCircumference() {
+                return "Circumference = " + ((this.Height + this.Width) / 2)
+
+            }
+    }
+
+    let height = Number(prompt("Nhập chiều dài"))
+    let width = Number(prompt("Nhập chiều rộng"))
+    let rectangle = new Rectangle(height,width)
+    alert(rectangle.getArea())
+    alert(rectangle.getCircumference())
+</script>
+
+</body>
+</html>

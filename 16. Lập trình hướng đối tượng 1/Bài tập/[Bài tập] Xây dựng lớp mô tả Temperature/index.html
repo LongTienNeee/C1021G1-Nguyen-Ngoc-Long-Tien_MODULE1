@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperature{
+        constructor(C){
+        this.C = C;
+    };
+        toF(){
+            return "F = " + (9/5 * this.C + 32)
+        };
+        toK(){
+            return "K =" + (this.C + 273.15)
+        };
+    }
+    let c = Number(prompt("Nhập độ C"))
+    let temperature = new Temperature(c)
+    alert(temperature.toF())
+    alert(temperature.toK())
+</script>
+
+</body>
+</html>

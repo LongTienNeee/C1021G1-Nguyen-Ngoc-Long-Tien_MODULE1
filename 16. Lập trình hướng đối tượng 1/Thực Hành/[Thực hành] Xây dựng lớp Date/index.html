@@ -7,49 +7,52 @@
 <body>
 <script>
     //Khởi tạo lớp date có tham số ngày tháng năm
-    function Date(day, month, year) {
+    class Date{
     //Thuộc tính của lớp date
-        this.day = day
-        this.month = month
-        this.year = year
+        constructor(DAY,MONTH,YEAR) {
 
-    //Phương thức Date() của lớp date lấy ra cả ngày tháng năm
-        this.Date = function () {
-             return this.day + "/" + this.month + "/" + this.year
-        }
+            this.DAY = DAY
+            this.MONTH = MONTH
+            this.YEAR = YEAR
+        };
+
+    //Phương thức getDate() của lớp date lấy ra cả ngày tháng năm
+        getDate(){
+             return this.DAY + "/" + this.MONTH + "/" + this.YEAR
+        };
 
     //Phương thức getDay(), getMonth(), getYear() của lớp date lấy ra ngày, tháng, năm
-        this.getDay = function(){
-            return this.day
-        }
-        this.getMonth = function(){
-            return this.month
-        }
-        this.getYear = function(){
-            return this.year
-        }
+        getDay(){
+            return this.DAY
+        };
+        getMonth(){
+            return this.MONTH
+        };
+        getYear(){
+            return this.YEAR
+        };
 
     //Phương thức thiết đặt các giá trị thuộc tính cho ngày tháng năm
-        this.setDay = function (day) {
-            this.day = day
+        setDay(day) {
+            this.DAY = day
         }
-        this.setMonth = function (month) {
-            this.month = month
+        setMonth(month) {
+            this.MONTH = month
         }
-        this.setYear = function (year) {
-            this.year = year
+        setYear(year) {
+            this.YEAR = year
         }
     }
 
     // Đặt tên biến để lấy ra giá trị và đặt đối số
     let myDate = new Date(2,3,2007)
-    // myDate.setDay(17)
-    // myDate.setMonth(11)
-    // myDate.setYear(2021)
-    // let day = myDate.getDay()
-    // let month = myDate.getMonth()
-    // let year = myDate.getYear()
-    // alert(day + "/" + month + "/" + year)
+    myDate.setDay(17)
+    myDate.setMonth(11)
+    myDate.setYear(2021)
+    let day = myDate.getDay()
+    let month = myDate.getMonth()
+    let year = myDate.getYear()
+    alert(day + "/" + month + "/" + year)
     alert(myDate.Date())
 </script>
 

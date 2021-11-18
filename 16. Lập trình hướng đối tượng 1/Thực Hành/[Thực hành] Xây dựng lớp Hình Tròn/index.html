@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Circle{
+        constructor(radius,color) {
+
+            //Tạo thuộc tính cho class circle
+            this.radius = radius;
+            this.color = color;
+        }
+
+       //Tạo phương thức cho class
+       //Phương thức lấy ra bán kính
+       getRadius() {
+            return "Radius = " + this.radius
+       };
+
+       //Phương thức lấy ra màu sắc
+       getColor() {
+            return "Color = " + this.color
+       };
+
+       //Phương thức lấy ra diện tích
+       getArea() {
+            return "Area = " + Math.PI * this.radius*this.radius
+       };
+
+       //Phương thức lấy ra đường kính
+       getDiameter() {
+            return "Diameter = " + (this.radius+this.radius)
+       }
+    }
+    let circle = new Circle(5,"blue" )
+    console.log(circle.getRadius())
+    console.log(circle.getDiameter())
+    console.log(circle.getColor())
+    console.log(circle.getArea())
+</script>
+
+</body>
+</html>

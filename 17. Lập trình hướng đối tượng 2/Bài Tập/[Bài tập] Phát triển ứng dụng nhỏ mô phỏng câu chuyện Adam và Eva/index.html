@@ -36,13 +36,11 @@
             this.gender = gender
             this.weight = weight
         }
-        checkGender(){
-            if(this.gender === "man"){
+        checkGender() {
+            if(this.gender) {
                 console.log("This is a man")
-            } else if(this.gender === "woman"){
-                console.log("This is a woman")
             } else {
-                console.log("Undetermined gender")
+                console.log("This is a woman")
             }
         }
 
@@ -50,18 +48,18 @@
             return this.gender = gender
         }
 
-        talk(){
-            if(this.gender === "woman"){
-                console.log("i am a woman")
-            } else if(this.gender === "man"){
+        talk() {
+            if (this.gender) {
                 console.log("i am a man")
             } else {
-                console.log("blabla")
+                console.log("i am a woman")
             }
         }
 
-        //Chưa biết làm sao để khi ăn xong giảm 1 đơn vị cân nặng
+
         eat(appleObj){
+            this.weight += 1
+            console.log("Ăn táo")
            return appleObj.decrease()
         }
 
@@ -72,10 +70,10 @@
            return this.name = name
         }
 
-        setWeigth(Weight) {
+        setWeight(Weight) {
             return this.weight = Weight
         }
-        getWeigt(){
+        getWeight(){
             console.log(this.weight)
         }
 

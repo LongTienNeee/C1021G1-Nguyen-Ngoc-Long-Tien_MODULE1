@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let lengthM = parseInt(prompt("Nhập độ dài mảng cha"))
+    let m = new Array(lengthM)
+    let lengthN = 0
+    for(let i=0; i<m.length;i++) {
+        lengthN = parseInt(prompt("Nhập độ dài mảng con " + i))
+        m[i] = new Array(lengthN)
+        for (let j = 0; j < m[i].length; j++) {
+            m[i][j] = parseInt(prompt("Nhập phần tử " + "[" + i + "]" + "[" + j + "]"))
+        }
+    }
+    console.log(m)
+
+    let max = m[0][0]
+    let min = m[0][0]
+    for(let g=0;g<m.length;g++){
+        for(let h=0;h<m[g].length;h++){
+            if(m[g][h] > max ){
+                max = m[g][h]
+            }
+            if(m[g][h] < min){
+                min = m[g][h]
+            }
+        }
+    }
+    console.log(max)
+    console.log(min)
+</script>
+
+</body>
+</html>

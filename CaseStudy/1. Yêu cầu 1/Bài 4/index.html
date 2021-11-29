@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let h = parseInt(prompt("Nhập chiều cao của hình tam giác cân"))
+    let w = h*2-1
+    let shape = ""
+    for(let i=1;i<=h;i++){
+        for(let j=w/2-i;j>0;j--){
+            shape += "&ensp;"
+        }
+        for(let g=0;g<=i*2-1;g++) {
+            if (i === 1 || i === h) {
+                shape += "*"
+            } else {
+                if (g === 1 || g === i * 2 - 1) {
+                    shape += "*"
+                } else {
+                    shape += "&ensp;"
+                }
+            }
+        }l
+        shape += "<br>"
+    }
+    document.write(shape)
+</script>
+
+</body>
+</html>

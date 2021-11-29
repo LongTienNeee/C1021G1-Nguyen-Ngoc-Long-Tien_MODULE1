@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let lengthM = parseInt(prompt("Nhập độ dài mảng cha "))
+    let m = new Array(lengthM)
+    let lengthN = 0
+    for(let i=0;i<m.length;i++){
+        lengthN = parseInt(prompt("Nhập độ dài mảng con " + i))
+        m[i] = new Array(lengthN)
+        for(let j=0;j<m[i].length;j++){
+            m[i][j] = Number(prompt("Nhập phần tử " + "["+i+"]"+"["+j+"]"))
+        }
+    }
+    console.log(m)
+
+    let e = 1
+    let soNguyenTo
+        soNguyenTo = []
+    for(let h=0;h<m.length;h++){
+        for(let k=0;k<m[h].length;k++){
+            let count = 0
+            if(m[h][k] >=2){
+                while(e <= m[h][k]){
+                    if(m[h][k] % e === 0){
+                        count++
+                    }
+                    e++
+                }
+            }
+            if(count === 2 ){
+                soNguyenTo.push(m[h][k])
+            }
+        }
+    }
+    console.log(soNguyenTo)
+
+
+</script>
+</body>
+</html>

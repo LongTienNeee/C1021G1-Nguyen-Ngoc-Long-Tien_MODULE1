@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let H =  Number(prompt("Nhập chiều cao của hình tam giác cân"))
+  let W = 2*H-1
+  let shape = ""
+    for(let i=1;i<=H;i++) {
+        for(let g=W/2-i;g>0;g--) {
+            shape += "&ensp;"
+        }
+            for(let j=1;j<=i*2-1;j++) {
+                shape += "*"
+
+        }
+        shape += "<br>"
+    }
+    console.log(shape)
+
+</script>
+
+</body>
+</html>

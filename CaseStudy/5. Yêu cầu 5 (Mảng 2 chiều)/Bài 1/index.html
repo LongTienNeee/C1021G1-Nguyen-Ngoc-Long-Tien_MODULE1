@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let totalEvenNum = 0
+    let lengthM = parseInt(prompt("Nhập độ dài mảng cha (m) : "))
+    let m = new Array(lengthM)
+    let lengthN = 0
+    for(let i=0; i <m.length;i++) {
+        lengthN = parseInt(prompt("Nhập độ dài mảng con " + i))
+        m[i] = new Array(lengthN)
+
+        for (let j = 0; j < m[i].length; j++) {
+            m[i][j] = parseInt(prompt("Nhập phần tử " + "[" + i + "]" + "[" + j + "]"))
+            if(m[i][j] % 2 === 0){
+                totalEvenNum += m[i][j]
+            }
+        }
+    }
+    console.table(m)
+    console.log(totalEvenNum)
+
+
+
+</script>
+
+</body>
+</html>

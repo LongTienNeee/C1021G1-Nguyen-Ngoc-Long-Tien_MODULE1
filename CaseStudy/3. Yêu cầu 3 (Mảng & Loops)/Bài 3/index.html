@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let lengthArr = parseInt(prompt("Nhập độ dài của mảng các số thập phận"))
+    let a = new Array(lengthArr)
+    for(let j=0;j<a.length;j++){
+        a[j] = parseInt(prompt("Nhập tử vị trí " + j))
+    }
+
+    let b = new Array(lengthArr)
+    for(let g=0;g<b.length;g++){
+        b[g] = parseInt(prompt("Nhập mẫu vị trí " + g))
+    }
+
+
+    let index = 0
+    let max = a[0]/b[0]
+    for(let i=1; i<a.length;i++) {
+        if (a[i] / b[i] > max) {
+            max = a[i] / b[i]
+            index = i
+        }
+    }
+
+    alert(max)
+    alert(index)
+</script>
+
+</body>
+</html>

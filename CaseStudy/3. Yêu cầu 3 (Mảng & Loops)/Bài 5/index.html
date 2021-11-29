@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Bảng danh sách nước uống</h2>
+<ol>
+    <li>Cafe</li>
+    <li>Cam vắt</li>
+    <li>Nước ép cà rốt</li>
+    <li>Nước ép cà chưa</li>
+    <li>Nước lọc</li>
+    <li>Nước dừa</li>
+    <li>Thoát gọi món</li>
+</ol>
+<input type="text" id="order">
+<button type="button" onclick="clickToOrder()">Chọn</button>
+<script>
+
+   function clickToOrder(){
+       let order = parseInt(document.getElementById("order").value)
+        switch (order) {
+           case 1:
+               let cafe = 10000
+               alert("Giá của Cafe là 10000 VND")
+               let number1 = parseInt(prompt("Vui lòng nhập số lượng"))
+               alert("Tổng : " + cafe*number1 + " VND")
+                break;
+           case 2:
+               let camvat = 20000
+               alert("Giá của Cam vắt là 20000 VND")
+               let number2 = parseInt(prompt("Vui lòng nhập số lượng"))
+               alert("Tổng : " + camvat*number2 + " VND")
+               break;
+            case 3:
+                let carot = 15000
+                alert("Giá của nước ép cà rốt là 15000 VND")
+                let number3 = parseInt(prompt("Vui lòng nhập số lượng"))
+                alert("Tổng : " + carot*number3 + " VND")
+                break;
+            case 4:
+                let cachua = 17000
+                alert("Giá của nước ép cà chua là 17000 VND")
+                let number4 = parseInt(prompt("Vui lòng nhập số lượng"))
+                alert("Tổng : " + cachua*number4 + " VND")
+                break;
+            case 5:
+                let nuocloc = 5000
+                alert("Giá của nước lọc là 5000 VND")
+                let number5 = parseInt(prompt("Vui lòng nhập số lượng"))
+                alert("Tổng : " + nuocloc*number5 + " VND")
+                break;
+            case 6:
+                let nuocdua = 30000
+                alert("Giá của nước dừa là 30000 VND")
+                let number6 = parseInt(prompt("Vui lòng nhập số lượng"))
+                alert("Tổng : " + nuocdua*number6 + " VND")
+                break;
+            case 7:
+                alert("byebye")
+        }
+
+   }
+    
+</script>
+
+</body>
+</html>

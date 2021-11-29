@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = parseInt(prompt("Nhập số"))
+    let n = number.toString()
+    let x = []
+    for(let i=0;i<n.length;i++) {
+        switch (n[i]) {
+            case "0":
+                x.push("không")
+                break;
+            case "1":
+                x.push("một")
+                break;
+            case "2":
+                x.push("hai")
+                break;
+            case "3":
+                x.push("ba")
+                break;
+            case "4":
+                x.push("bốn")
+                break
+            case "5":
+                x.push("năm")
+                break;
+            case "6":
+                x.push("sáu")
+                break;
+            case "7":
+                x.push("bảy")
+                break;
+            case "8":
+                x.push("tám")
+                break
+            case "9":
+                x.push("chín")
+                break
+        }
+    //     x += n[i]
+    }
+   alert(x.join(" "))
+</script>
+
+</body>
+</html>

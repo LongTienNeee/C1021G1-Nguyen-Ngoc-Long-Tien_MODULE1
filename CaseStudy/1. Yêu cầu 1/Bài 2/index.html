@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let h = parseInt(prompt("Nhập vào chiều cao của hình tam giác"))
+    let rectangle = ""
+    for(let i=1;i<=h;i++){
+        for(let j=1;j<= h;j++){
+            if(i === h){
+                rectangle += "*"
+            } else if(j === 1 || j === i){
+                rectangle += "*"
+            } else {
+                rectangle += "&ensp;"
+            }
+        }
+        rectangle += "<br>"
+    }
+    document.write(rectangle)
+</script>
+
+</body>
+</html>
